@@ -31,6 +31,9 @@ public class Note extends BaseEntity {
     @Column(name = "is_pinned", columnDefinition = "TINYINT(1) default 0")
     private boolean isPinned = false;
 
+    @Column(name = "is_archived", columnDefinition = "TINYINT(1) DEFAULT 0")
+    private boolean isArchived = false;
+
     @Column(name = "is_active", columnDefinition = "TINYINT(1) default 1")
     private boolean isActive = true;
 
