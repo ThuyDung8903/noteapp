@@ -35,6 +35,9 @@ public class Content extends BaseEntity {
     @Size(max = 255)
     private String caption;
 
+    @Column(name = "is_completed", columnDefinition = "TINYINT(1) DEFAULT 0")
+    private boolean isCompleted = false;
+
     public enum ContentType {
         TEXT, IMAGE
     }
